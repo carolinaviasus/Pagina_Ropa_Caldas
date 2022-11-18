@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(233, 213, 213);
+    color: rgb(5, 5, 5);
+    text-align: center;
+    /* font-size: 20px; */
+}
+
+.saludo:hover {
+    color: aquamarine;
+}
+
+button {
+    font-size: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+
+main{
+    padding-top: 50px;
+}
+
+i {
+    padding-right: 3px;
+}
+
+.card-form {
+    padding: 30px 60px 30px 60px;
+    margin-left: 300px;
+    margin-right: 300px;
+
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(175, 194, 248),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+/* ----------Generales--------- */
+*{
+    padding: 0;
+}
+.Layout{
+    max-width: 1550px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    box-sizing: 0 2px 6px ;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+/* // ------------PRODUCTOS---------- */
+.title {
+    font-size: 2.4rem;
+    padding: 10rem 0 0 0;
+    color: rgb(4, 5, 5);  
+}
+.productos {
+    padding: 5rem 1rem;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 3rem 2rem;
+    box-sizing: border-box;
+}
+.producto {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, .2);
+    border: 6px solid transparent;
+    border-radius: 5px;
+}
+.producto:hover{
+    border: 6px solid #f5faf859;
+}
+.producto__img img {
+    width: 310px;
+}
+.producto__footer{
+    padding: 1rem;
+}
+.producto__footer h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #1a202c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.producto__footer p{
+    font-weight: 700;
+    color: rgba(0, 0, 0, .555);
+    text-transform: uppercase;
+    font-size: 18px ;
+}
+.producto__footer .price{
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, .555);
+}
+.producto .buttom{
+    width: 100% ;
+    height: 45px;
+    background-color: rgba(36, 36, 37, 0.87);
+    max-width: 250px;
+    /* margin: 0 auto; */
+    font-size: 1.5rem;
+    color:aliceblue;
+    font-weight: 600;
+}
